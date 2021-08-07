@@ -6,7 +6,7 @@ We have learned various process scheduling policies and examined their propertie
 To better understand them, you will implement SJF, SRTF, round-robin, priority, priority + aging, priority + PIP, and priority + PCP scheduling policies on an educational scheduler simulation framework which imitates the scheduler core of modern operating systems.
 
 
-### <description how each scheduling policy is implemented>
+### description how each scheduling policy is implemented
 	
 - Sjf_scheduling: sjf는 no preemption이므로 만약 현재 돌고 있는 current process가 있다면, 계
 속 돌게끔 current를 리턴해주고, 현재 돌고 있는 process가 없다면, list_head의 순회 함수를
