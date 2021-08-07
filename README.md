@@ -1,8 +1,5 @@
 ## Project #2: Simulating Processor Schedulers
 
-### *** Due on 24:00, April 30 (Friday) ***
-
-
 ### Goal
 
 We have learned various process scheduling policies and examined their properties in the class.
@@ -72,45 +69,3 @@ To better understand them, you will implement SJF, SRTF, round-robin, priority, 
   - See [this](https://www.embedded.com/how-to-use-priority-inheritance/) for a comprehensive exposition.
 
 
-### Tips and Restriction
-
-- The grading system only examines the messages printed out to `stderr`. Thus, you can use `printf` as you want.
-- Use `dump_status()` function to see the situation of processes and resources.
-- Recall PA0 and PA1 for manipulating the `list_head` queues.
-- Make sure you are using `list_for_*_safe` variants if an entry is removed from the list during the iteration, and `list_del_init` to remove an entry from the list. (Do some Internet search for their differences)
-
-
-### Submission / Grading
-
-- Use [PAsubmit](https://sslab.ajou.ac.kr/pasubmit) for submission
-	- 550 pts + 10 pts 
-	- You can submit up to **30** times.
-	- The details of some testcase results are hidden and you can only check the final decision (i.e., pass/fail);
-
-- Code: ***pa2.c*** (500 pts)
-	- SJF scheduler: 20pts (tested using `multi`)
-	- SRTF scheduler: 50pts (`multi`);
-	- RR scheduler:  50pts (`multi` and `prio`)
-	- Priority scheduler: 60pts (`prio` and `resources-prio`)
-	- Priority scheduler + aging: 100pts (`prio`)
-	- Priority scheduler + PCP: 70pts (`resources-basic`)
-	- Priority scheduler + PIP: 150pts (`resources-adv1` and `resources-adv2`)
-
-- Document: One PDF document (50 pts) including;
-	- Description how **each** scheduling policy is implemented
-	  - Do not explain the code itself. Instead, focus on explaining your idea and approach.
-	  - Please, do not put screenshots of your code.
-	- Show how the priorities of processes are changed over time for aging and PIP.
-    - Use `prio` testcase for PA scheduler, and `resources-adv2` for PIP.
-		- Explain to the 12nd tick.
-	- Lesson learned
-	  - No need recite what is explained in the class.
-	- No more than **five** pages
-
-- Git repository (10 pts)
-	- Register http URL and with a deploy token and password.
-	- Start the repository by cloning this repository.
-	- Make sure the token is valid through May 7 (due + 3 slip days + 4 day)
-
-- *WILL NOT ANSWER THE QUESTIONS ABOUT THOSE ALREADY SPECIFIED ON THE HANDOUT.*
-- *QUESTIONS OVER EMAIL WILL BE IGNORED UNLESS IT CONCERNS YOUR PRIVACY.*
